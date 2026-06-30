@@ -327,7 +327,7 @@ export default function App() {
             {/* Total Estimated Water */}
             <div className="flex items-center gap-1.5 border-l border-slate-200 pl-4">
               <Droplet className="w-3.5 h-3.5 text-sky-600 animate-pulse" />
-              <span>Becsült Valós Csúcs:</span>
+              <span>Független civil / oknyomozó források szerinti becsült csúcsigény:</span>
               <strong className="text-sky-600">{totals.estimatedSum.toLocaleString('hu-HU')} m³/nap</strong>
             </div>
 
@@ -499,7 +499,7 @@ export default function App() {
                     <div className="flex justify-between items-center text-xs">
                       <div className="flex items-center gap-1.5 text-slate-500">
                         <Droplet className="w-4 h-4 text-sky-600 shrink-0" />
-                        <span>Független becsült csúcs:</span>
+                        <span>Független civil / oknyomozó források szerinti becsült csúcsigény:</span>
                       </div>
                       <span className="font-mono font-bold text-sky-600 text-sm">
                         {selectedFactory.vizigeny_becsult
@@ -854,18 +854,26 @@ export default function App() {
       )}
 
       {/* FOOTER */}
-      <footer className="bg-slate-100/40 border-t border-slate-200 py-4 px-6 text-center text-[10px] sm:text-xs text-slate-500 font-mono">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p>
-            © 2026 Akkugyárak Vízmérője Monitor Rendszer. Minden tartalom független adatgyűjtés eredménye.
-          </p>
-          <div className="flex gap-4">
-            <a href="https://atlatszo.hu" target="_blank" rel="noopener noreferrer" className="hover:text-slate-800 text-slate-600 underline cursor-pointer">
-              Átlátszó.hu
-            </a>
-            <a href="https://greenpeace.hu" target="_blank" rel="noopener noreferrer" className="hover:text-slate-800 text-slate-600 underline cursor-pointer">
-              Greenpeace Magyarország
-            </a>
+      <footer className="bg-slate-100/40 border-t border-slate-200 py-6 px-6 text-slate-500 font-sans">
+        <div className="max-w-7xl mx-auto space-y-4">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-3 border-b border-slate-200/60 pb-4">
+            <p className="text-xs font-mono">
+              © 2026 Akkugyárak Vízmérője Monitor Rendszer. Minden tartalom független adatgyűjtés eredménye.
+            </p>
+            <div className="flex gap-4 text-xs font-mono">
+              <a href="https://atlatszo.hu" target="_blank" rel="noopener noreferrer" className="hover:text-slate-800 text-slate-600 underline cursor-pointer">
+                Átlátszó.hu
+              </a>
+              <a href="https://greenpeace.hu" target="_blank" rel="noopener noreferrer" className="hover:text-slate-800 text-slate-600 underline cursor-pointer">
+                Greenpeace Magyarország
+              </a>
+            </div>
+          </div>
+          <div className="bg-slate-50 border border-slate-200/50 rounded-xl p-4 text-left">
+            <h5 className="text-slate-800 font-bold text-xs mb-1">Jogi nyilatkozat</h5>
+            <p className="text-[11px] text-slate-500 leading-relaxed font-normal">
+              A platformon megjelenő adatok kizárólag nyilvánosan hozzáférhető környezetvédelmi hatásvizsgálatokból, engedélyokiratokból és független oknyomozó újságírói anyagokból (pl. Átlátszó.hu, 2025) származnak. Az alkalmazás egy civil információs aggregátor, nem generál fiktív adatokat. A lakossági egyenérték-számítások standard matematikai modelleken alapulnak.
+            </p>
           </div>
         </div>
       </footer>

@@ -323,12 +323,17 @@ export default function TrendChart({ factories, selectedFactory }: TrendChartPro
           </div>
           <div className="flex items-center gap-1.5">
             <span className="w-2.5 h-2.5 rounded bg-sky-500"></span>
-            <span className="text-slate-600">Független becsült (Csúcs)</span>
+            <span className="text-slate-600">Független civil / oknyomozó források szerinti becsült csúcsigény</span>
           </div>
         </div>
         <div className="text-[10px] text-slate-400 font-mono">
           *m³/nap: napi köbméter fogyasztás
         </div>
+      </div>
+      
+      {/* Jogi nyilatkozat */}
+      <div className="mt-4 pt-3 border-t border-slate-100 text-[10px] text-slate-400 leading-relaxed font-sans">
+        <strong>Jogi nyilatkozat:</strong> A platformon megjelenő adatok kizárólag nyilvánosan hozzáférhető környezetvédelmi hatásvizsgálatokból, engedélyokiratokból és független oknyomozó újságírói anyagokból (pl. Átlátszó.hu, 2025) származnak. Az alkalmazás egy civil információs aggregátor, nem generál fiktív adatokat. A lakossági egyenérték-számítások standard matematikai modelleken alapulnak.
       </div>
     </div>
   );

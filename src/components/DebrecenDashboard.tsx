@@ -69,7 +69,7 @@ export default function DebrecenDashboard({ factories }: DebrecenDashboardProps)
         {/* Metric 3 */}
         <div className="bg-slate-50 p-4 rounded-xl border border-slate-100 flex flex-col justify-between">
           <span className="text-[10px] font-mono font-bold text-blue-600 uppercase tracking-wider">
-            Gyárak Becsült Csúcs Igénye
+            Független civil / oknyomozó források szerinti becsült csúcsigény
           </span>
           <div className="mt-2 flex items-baseline gap-1.5">
             <span className="text-2xl font-black text-blue-600 tracking-tight">
@@ -117,7 +117,7 @@ export default function DebrecenDashboard({ factories }: DebrecenDashboardProps)
         {/* Bar 3: Estimated */}
         <div className="space-y-1">
           <div className="flex justify-between text-xs font-mono text-slate-500">
-            <span>Akkugyárak Becsült / Valós Csúcsfogyasztása</span>
+            <span>Független civil / oknyomozó források szerinti becsült csúcsigény</span>
             <span className="text-blue-600 font-bold">{estimatedPercentage}% ({totalEstimated.toLocaleString('hu-HU')} m³/nap)</span>
           </div>
           <div className="w-full h-3 bg-slate-200/60 rounded-full overflow-hidden border border-slate-300/10 relative">
@@ -161,6 +161,14 @@ export default function DebrecenDashboard({ factories }: DebrecenDashboardProps)
             A kiterjedt csatornázás és a talajvíz nagymértékű lecsapolása növeli az aszályok kockázatát, különösen a Tiszántúl amúgy is szárazodó, homokhátsági területein.
           </p>
         </div>
+      </div>
+
+      {/* Jogi nyilatkozat */}
+      <div className="bg-slate-50 border border-slate-200/50 rounded-xl p-3.5 mt-3 text-left">
+        <h5 className="text-slate-800 font-bold text-[11px] mb-1 font-mono uppercase tracking-wider">Jogi nyilatkozat</h5>
+        <p className="text-[10px] text-slate-500 leading-relaxed font-sans">
+          A platformon megjelenő adatok kizárólag nyilvánosan hozzáférhető környezetvédelmi hatásvizsgálatokból, engedélyokiratokból és független oknyomozó újságírói anyagokból (pl. Átlátszó.hu, 2025) származnak. Az alkalmazás egy civil információs aggregátor, nem generál fiktív adatokat. A lakossági egyenérték-számítások standard matematikai modelleken alapulnak.
+        </p>
       </div>
     </div>
   );

@@ -136,7 +136,7 @@ export default function Map({ factories, selectedFactoryId, onSelectFactory }: M
               <span class="font-semibold text-slate-800">${officialWater}</span>
             </div>
             <div class="flex justify-between text-[11px]">
-              <span class="text-slate-400">Független becsült:</span>
+              <span class="text-slate-400">Civil/oknyomozó becsült csúcs:</span>
               <span class="font-bold text-blue-600">${estimatedWater}</span>
             </div>
           </div>
