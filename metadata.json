@@ -1,0 +1,6 @@
+{
+  "name": "Akkugyárak Vízhasználati Térképe",
+  "description": "Interaktív térkép és dashboard a magyarországi akkumulátorgyárak hivatalos és becsült vízigényének és környezeti hatásainak vizualizálására.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
