@@ -10,9 +10,9 @@ export const INITIAL_FACTORIES: Factory[] = [
     vizigeny_hivatalos: 5000,
     vizigeny_becsult: 42500,
     mertekegyseg: 'm3/nap',
-    forras: 'Debreceni Vízmű Tanulmány / Átlátszó oknyomozás',
-    forras_link: 'https://atlatszo.hu/orszagszerte/2023/01/24/tizszeresere-is-nohet-debrecen-vizigenye-az-akkumulatorgyarak-miatt/',
-    megjegyzes: 'Magyarország legnagyobb ipari beruházása. A lakossági aggodalmak fókuszában a talajvízszint süllyedése, a kutak kiszáradása és a CIVAQUA csatorna ipari célú használata áll. Sorozatgyártás elindult 2026-ban.',
+    forras: 'Átlátszó oknyomozó riport / Debreceni Vízmű Tanulmány',
+    forras_link: 'https://atlatszo.hu/orszagszerte/2025/01/szazmilliardok-az-akkugyar-vizellatasara-mikozben-a-lakossagi-vizhalozat-lepusztul/',
+    megjegyzes: '108 milliárd Ft-os debreceni program része. A Keleti-főcsatorna vízkivételi tisztítóműve meghiúsult. A gyári hőcserélők miatt a belépő víz 85%-a elpárolog, ami ipari hóesést és mikroklíma-változást okozhat a reptér mellett. A CIVAQUA program II. fázisa állami források híján leállt.',
     kapacitas_gwh: 100,
     lakossagi_bejelentesek_szama: 18,
     eves_adatok: [
@@ -32,9 +32,9 @@ export const INITIAL_FACTORIES: Factory[] = [
     vizigeny_hivatalos: 3500,
     vizigeny_becsult: 10000,
     mertekegyseg: 'm3/nap',
-    forras: 'Göd-ÉRT Egyesület / KHT Engedélyek',
-    forras_link: 'https://atlatszo.hu/orszagszerte/2024/02/12/naponta-tobb-ezer-kobmeter-vizet-es-sok-aramot-fogyaszt-a-godi-samsung-gyar/',
-    megjegyzes: 'Hosszú évek óta aktívan működő üzem. Jelentős lakossági konfliktusok forrása a folyamatos éjszakai zajártalom, valamint a környező talajvízben és magánkutakban kimutatott lítium és NMP (magzatkárosító oldószer) jelenléte miatt.',
+    forras: 'Átlátszó oknyomozó riport / Göd-ÉRT',
+    forras_link: 'https://atlatszo.hu/orszagszerte/2025/01/szazmilliardok-az-akkugyar-vizellatasara-mikozben-a-lakossagi-vizhalozat-lepusztul/',
+    megjegyzes: '34,5 milliárd Ft-os giga-infrastruktúra (Mészáros és Mészáros). A gyárat a Chinoin-szennyezés miatt 40 éve lezárt váci kutak újranyitásával látják el (napi 27 000 m3). A gyár titkosítja a szennyvíz összetételét. Teljes tarvágás a sződligeti Duna-parton (1.5 km Natura 2000 terület).',
     kapacitas_gwh: 40,
     lakossagi_bejelentesek_szama: 24,
     eves_adatok: [
@@ -73,11 +73,11 @@ export const INITIAL_FACTORIES: Factory[] = [
     koordinatak: [47.159, 18.918],
     statusz: 'mukodik',
     vizigeny_hivatalos: 3200,
-    vizigeny_becsult: 8500,
+    vizigeny_becsult: 9000,
     mertekegyseg: 'm3/nap',
-    forras: 'Fejér Vármegyei Kormányhivatal Hatósági Engedélyek',
-    forras_link: 'https://atlatszo.hu/orszagszerte/2023/11/14/ivancsa-is-megkapta-az-orias-akkugyar-vizigeny-boviteset/',
-    megjegyzes: 'Rendkívül gyors ütemben épült gigaberuházás. A helyi ivóvízhálózat fejlesztése és a szennyvízcsatorna elvezetése komoly infrastrukturális terhet jelent a környező kistelepülések számára. Próbaüzem után teljes kapacitáson üzemel.',
+    forras: 'Átlátszó oknyomozó riport / Fejér Megyei Hivatal',
+    forras_link: 'https://atlatszo.hu/orszagszerte/2025/01/szazmilliardok-az-akkugyar-vizellatasara-mikozben-a-lakossagi-vizhalozat-lepusztul/',
+    megjegyzes: '40 milliárd Ft közpénzből épült víziközmű (Mészáros és Mészáros). A szennyvízcsatorna 4 km hosszan lakóházak és Natura 2000 területek alatt vezet a Dunáig. A végleges duna-medri bevezetés még nem készült el.',
     kapacitas_gwh: 30,
     lakossagi_bejelentesek_szama: 11,
     eves_adatok: [
@@ -85,7 +85,7 @@ export const INITIAL_FACTORIES: Factory[] = [
       { ev: 2023, fogyasztas_hivatalos: 300, fogyasztas_becsult: 1800 },
       { ev: 2024, fogyasztas_hivatalos: 1500, fogyasztas_becsult: 5200 },
       { ev: 2025, fogyasztas_hivatalos: 2800, fogyasztas_becsult: 7800 },
-      { ev: 2026, fogyasztas_hivatalos: 3200, fogyasztas_becsult: 8500 }
+      { ev: 2026, fogyasztas_hivatalos: 3200, fogyasztas_becsult: 9000 }
     ]
   },
   {

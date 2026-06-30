@@ -348,6 +348,26 @@ export default function App() {
         </div>
       </section>
 
+      {/* KRITIKUS JELENTÉS BANNER */}
+      <div className="bg-amber-50/90 border-b border-amber-200 px-4 py-2.5 text-xs text-amber-950 shadow-sm shrink-0">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-3">
+          <div className="flex items-start gap-2.5">
+            <AlertTriangle className="w-4 h-4 text-amber-600 mt-0.5 shrink-0" />
+            <p className="leading-relaxed">
+              <strong>Kritikus vízközmű-torzulás (Átlátszó oknyomozó riport):</strong> A legnagyobb hazai akkumulátorgyárak együttesen több mint <strong>100 000 m³/nap</strong> vizet igényelnek (egy félmilliós város napi fogyasztása). Miközben százmilliárdok csoportosulnak át az ipari vízművekre, a lakossági hálózatfelújítások (mint a 16 milliárdos Pest megyei program) forráshiány miatt sorra meghiúsulnak.
+            </p>
+          </div>
+          <a
+            href="https://atlatszo.hu/orszagszerte/2025/01/szazmilliardok-az-akkugyar-vizellatasara-mikozben-a-lakossagi-vizhalozat-lepusztul/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[10px] font-bold text-amber-700 hover:text-amber-900 underline shrink-0 flex items-center gap-0.5 whitespace-nowrap"
+          >
+            Oknyomozó Riport (2025) →
+          </a>
+        </div>
+      </div>
+
       {/* MAIN LAYOUT */}
       <main className="flex-1 max-w-7xl w-full mx-auto px-4 py-4 sm:px-6 grid grid-cols-1 lg:grid-cols-12 gap-5 min-h-0">
         
