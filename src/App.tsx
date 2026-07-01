@@ -487,7 +487,7 @@ export default function App() {
                     <div className="flex justify-between items-center text-xs">
                       <div className="flex items-center gap-1.5 text-slate-500">
                         <Droplet className="w-4 h-4 text-emerald-600 shrink-0" />
-                        <span>Hivatalos (KHT engedély):</span>
+                        <span>Hivatalos Technológiai Csúcs-Vízigény (KHT):</span>
                       </div>
                       <span className="font-mono font-bold text-emerald-600 text-sm">
                         {selectedFactory.vizigeny_hivatalos
@@ -495,6 +495,12 @@ export default function App() {
                           : 'Nem közzétett'}
                       </span>
                     </div>
+
+                    {selectedFactory.id === 'h-skon-kom' && (
+                      <div className="text-[10px] text-slate-500 italic bg-blue-50/50 p-2.5 rounded-lg border border-blue-100/50 leading-relaxed font-sans">
+                        <strong>Lábjegyzet:</strong> A tényleges nettó vízfogyasztás a belső recirkulációs és víztisztítási hatékonyságtól függően változik. A hűtőtornyok párolgási vesztesége jelenti a közvetlen terhelést a tatai/tatabányai karsztbázisra.
+                      </div>
+                    )}
 
                     {/* Estimated actual/peak demand */}
                     <div className="flex justify-between items-center text-xs">

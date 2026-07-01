@@ -43,6 +43,52 @@ export default function ZsambergReport() {
         </p>
       </div>
 
+      {/* HIDROLÓGIAI FOGALOMTÁR (GLOSSARY PANEL) */}
+      <div className="bg-blue-50/40 border border-blue-200 rounded-2xl p-5 shadow-sm space-y-4">
+        <div className="flex items-center gap-2.5">
+          <div className="w-7 h-7 rounded-lg bg-blue-100 flex items-center justify-center text-blue-700">
+            <FileText className="w-4 h-4" />
+          </div>
+          <div>
+            <h3 className="text-xs font-bold text-blue-900 font-mono uppercase tracking-wider">
+              Hidrológiai Fogalomtár
+            </h3>
+            <p className="text-[10px] text-blue-700">
+              A tudományos és jogi precizitás érdekében az ipari vízhasználat három alapvető kategóriája
+            </p>
+          </div>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs">
+          <div className="bg-white border border-blue-100 p-3.5 rounded-xl space-y-1.5">
+            <span className="text-[10px] font-mono font-bold text-sky-700 uppercase tracking-wider block">
+              💧 Vízigény (Water Demand)
+            </span>
+            <p className="text-[11px] text-slate-600 leading-relaxed">
+              Az a bruttó vízmennyiség, amely a technológia elméleti működéséhez maximálisan szükséges (pl. óránként vagy naponta). Ezt tartalmazzák a hatóságoknak benyújtott környezeti engedélykérelmek.
+            </p>
+          </div>
+
+          <div className="bg-white border border-blue-100 p-3.5 rounded-xl space-y-1.5">
+            <span className="text-[10px] font-mono font-bold text-indigo-700 uppercase tracking-wider block">
+              🔄 Vízfelhasználás (Water Use / Recirculated)
+            </span>
+            <p className="text-[11px] text-slate-600 leading-relaxed">
+              Az a teljes mennyiség, ami átfolyik a gyár belső rendszerein. Ez a szám csalóka, mert ha egy üzem zárt belső recirkulációs kört alkalmaz, ugyanazt a vizet naponta akár tízszer is megforgathatja, így a tényleges elszívása sokkal kisebb lehet.
+            </p>
+          </div>
+
+          <div className="bg-white border border-blue-100 p-3.5 rounded-xl space-y-1.5">
+            <span className="text-[10px] font-mono font-bold text-emerald-700 uppercase tracking-wider block">
+              ⚠️ Vízfogyasztás (Consumption / Net Loss)
+            </span>
+            <p className="text-[11px] text-slate-600 leading-relaxed">
+              Az a nettó vízmennyiség, ami végleg kikerül a hidrológiai ciklusból (pl. elpárolog a hűtőtornyokban, beépül a termékekbe). <strong className="text-emerald-950">Ez a kritikus szám, ami a közvetlen vízhiányt okozza!</strong> Az SK On Komárom esetében a hűtőtornyok párolgási vesztesége jelenti ezt.
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* GRID SECTION 1 & 3 */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
         
@@ -119,7 +165,7 @@ export default function ZsambergReport() {
             </thead>
             <tbody className="divide-y divide-slate-100">
               <tr>
-                <td className="py-3.5 px-5 font-bold text-slate-950">SK On Komárom Max. Vízigény</td>
+                <td className="py-3.5 px-5 font-bold text-slate-950">SK On Komárom Technológiai Csúcs-Vízigény *</td>
                 <td className="py-3.5 px-5 text-right font-mono font-bold text-blue-600">4 100 m³/nap</td>
                 <td className="py-3.5 px-5 text-slate-600 leading-relaxed">
                   Meghaladja Komárom és Ács teljes napi lakossági vízigényét.
@@ -141,6 +187,12 @@ export default function ZsambergReport() {
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <div className="px-5 py-3 border-t border-slate-100 bg-slate-50/50">
+          <p className="text-[10px] text-slate-500 leading-relaxed italic">
+            * Lábjegyzet: A tényleges nettó vízfogyasztás a belső recirkulációs és víztisztítási hatékonyságtól függően változik. A hűtőtornyok párolgási vesztesége jelenti a közvetlen terhelést a tatai/tatabányai karsztbázisra.
+          </p>
         </div>
 
         <div className="p-4 bg-slate-50/70 border-t border-slate-100 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -184,15 +236,18 @@ export default function ZsambergReport() {
             </p>
           </div>
 
-          <div className="bg-white border border-slate-200 rounded-2xl p-4 shadow-sm space-y-2">
-            <span className="bg-sky-50 text-sky-700 text-[10px] font-bold px-2 py-0.5 rounded-full font-mono">
-              02 / PUFFERELÉS
+          <div className="bg-sky-50/70 border-2 border-sky-400 rounded-2xl p-4 shadow-md space-y-2 relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-sky-500 text-white text-[8px] font-bold px-2 py-0.5 rounded-bl-lg uppercase tracking-wider font-mono">
+              KIEMELT AJÁNLÁS
+            </div>
+            <span className="bg-sky-500 text-white text-[10px] font-bold px-2 py-0.5 rounded-full font-mono">
+              02 / RECIRKULÁCIÓ
             </span>
             <h5 className="font-bold text-slate-900 text-xs">
-              Ipari Pufferelés Kötelezése
+              Zárt körfolyamatú szürkevíz-újrahasznosítás
             </h5>
-            <p className="text-[11px] text-slate-600 leading-relaxed">
-              Jogszabályi nyomásgyakorlás, hogy a komáromi nehézipari üzemek saját zárt körfolyamatú szürkevíz-újrahasznosítót és több napos saját tározókapacitást építsenek ki, mentesítve a karsztvízrendszert aszálykor.
+            <p className="text-[11px] text-slate-700 leading-relaxed">
+              Jogszabályi kötelezés, hogy a nehézipari üzemek saját zárt belső kört alkalmazzanak. A cél a belső <strong>vízfelhasználás</strong> (recirkuláció) maximalizálása, ezáltal a hálózatból történő nettó <strong>vízfogyasztás</strong> (párolgási veszteségek, hűtőtornyok elpárologtatása) minimalizálása az aszályos időszakokban, így megóvva a közös karsztvízbázist.
             </p>
           </div>
 

@@ -56,7 +56,7 @@ export const INITIAL_FACTORIES: Factory[] = [
     mertekegyseg: 'm3/nap',
     forras: 'Átlátszó oknyomozó riport / Észak-dunántúli karsztvízrendszer adatok',
     forras_link: 'https://atlatszo.hu/orszagszerte/2025/01/szazmilliardok-az-akkugyar-vizellatasara-mikozben-a-lakossagi-vizhalozat-lepusztul/',
-    megjegyzes: 'A gyárak maximális vízigénye (4100 m³/nap) karsztvízbázisból (Tatabánya XIV/A és XV/C aknák) származik. Ennek kiszolgálására kiépített giga-távvezeték kapacitása 10 000–22 000 m³/nap. A megnövekedett ipari vízkivétel a közös Észak-dunántúli karsztvízrendszer terhelése miatt közvetve hozzájárul a végponti települések (Páty, Telki, Budajenő, Zsámbék) nyári vízhiányához és vízkorlátozásaihoz, amit a 20-30%-os hálózati veszteségek is súlyosbítanak.',
+    megjegyzes: 'Hivatalos Technológiai Csúcs-Vízigény: 4100 m³/nap (karsztvízbázisból). Ennek kiszolgálására kiépített giga-távvezeték kapacitása 10 000–22 000 m³/nap. Fontos tudományos és jogi distinkció, hogy a tényleges nettó vízfogyasztás a gyáron belüli recirkulációs vízfelhasználástól függ. A hűtőtornyok evaporatív vesztesége jelenti a közvetlen terhelést (nettó fogyasztást) a tatai/tatabányai karsztbázison, ami közvetve hozzájárul a végponti települések (Páty, Telki, Budajenő, Zsámbék) nyári vízhiányához és vízkorlátozásaihoz, amit a hálózati veszteségek is súlyosbítanak.',
     kapacitas_gwh: 17.5,
     lakossagi_bejelentesek_szama: 7,
     eves_adatok: [
