@@ -51,19 +51,20 @@ export const INITIAL_FACTORIES: Factory[] = [
     helyszin: 'Komárom',
     koordinatak: [47.731, 18.121],
     statusz: 'mukodik',
-    vizigeny_hivatalos: 2000,
-    vizigeny_becsult: 5500,
+    vizigeny_hivatalos: 4100,
+    vizigeny_becsult: 22000,
     mertekegyseg: 'm3/nap',
-    forras: 'Katasztrófavédelmi KHT dokumentumok',
-    megjegyzes: 'Két gyáregység üzemel. A helyi lakosság többször panaszkodott nehéz gépjárműforgalomra és alkalmankénti szúrós szagra. Korábban több munkahelyi baleset történt vegyi anyagok expozíciója miatt.',
+    forras: 'Átlátszó oknyomozó riport / Észak-dunántúli karsztvízrendszer adatok',
+    forras_link: 'https://atlatszo.hu/orszagszerte/2025/01/szazmilliardok-az-akkugyar-vizellatasara-mikozben-a-lakossagi-vizhalozat-lepusztul/',
+    megjegyzes: 'A gyárak maximális vízigénye (4100 m³/nap) karsztvízbázisból (Tatabánya XIV/A és XV/C aknák) származik. Ennek kiszolgálására kiépített giga-távvezeték kapacitása 10 000–22 000 m³/nap. A megnövekedett ipari vízkivétel a közös Észak-dunántúli karsztvízrendszer terhelése miatt közvetve hozzájárul a végponti települések (Páty, Telki, Budajenő, Zsámbék) nyári vízhiányához és vízkorlátozásaihoz, amit a 20-30%-os hálózati veszteségek is súlyosbítanak.',
     kapacitas_gwh: 17.5,
     lakossagi_bejelentesek_szama: 7,
     eves_adatok: [
       { ev: 2022, fogyasztas_hivatalos: 1600, fogyasztas_becsult: 4200 },
       { ev: 2023, fogyasztas_hivatalos: 1900, fogyasztas_becsult: 5000 },
-      { ev: 2024, fogyasztas_hivatalos: 2000, fogyasztas_becsult: 5300 },
-      { ev: 2025, fogyasztas_hivatalos: 2000, fogyasztas_becsult: 5400 },
-      { ev: 2026, fogyasztas_hivatalos: 2000, fogyasztas_becsult: 5500 }
+      { ev: 2024, fogyasztas_hivatalos: 3200, fogyasztas_becsult: 12000 },
+      { ev: 2025, fogyasztas_hivatalos: 3800, fogyasztas_becsult: 18000 },
+      { ev: 2026, fogyasztas_hivatalos: 4100, fogyasztas_becsult: 22000 }
     ]
   },
   {
@@ -228,6 +229,17 @@ export const INITIAL_COMPLAINTS: Complaint[] = [
     leiras: 'Hatalmas gőzkibocsátás és hirtelen süvítő hang hallatszott délután 3 körül a kettes üzem felől. Nem kaptunk tájékoztatást arról, hogy ez normál üzemi működés-e, vagy valamilyen üzemzavar.',
     bekuldo_nev: 'Kiss Gábor',
     bekuldo_email: 'kiss.gabor.kom@gmail.com',
+    hitelesitett: true
+  },
+  {
+    id: 'c-06',
+    factoryId: 'h-skon-kom',
+    factoryName: 'SK On Komárom',
+    datum: '2026-06-30',
+    tipus: 'vizhiany',
+    leiras: 'Zsámbéki-medencei lakosként közvetlenül érint minket az Észak-dunántúli karsztvízrendszer túlterhelése. A Pátyot, Telkit és Budajenőt ellátó ivóvíz a tatabányai XIV/A és XV/C vízaknákból karsztvízből érkezik, de a komáromi akkugyárak növekvő karsztvíz-kitermelése miatt nyáron rendszeres a nyomáscsökkenés és vízkorlátozás a hálózat végpontjain.',
+    bekuldo_nev: 'Kovács Balázs (Páty)',
+    bekuldo_email: 'kovacs.balazs.paty@gmail.com',
     hitelesitett: true
   }
 ];
